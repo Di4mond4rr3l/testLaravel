@@ -25,7 +25,6 @@ class UserController extends Controller
     {
         $users = User::with('roles')->get();
         // return view('users', ['users'=>$users]);
-        return $users;
     }
 
     /**
